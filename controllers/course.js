@@ -147,7 +147,7 @@ export const uploadVideo = async (req, res) => {
 export const removeVideo = async (req, res) => {
   try {
     if (req.user._id != req.params.instructorId) {
-      return res.status(400).send("Unauthorized");
+      return res.status(400).send("Unauthorized!!!");
     }
 
     const { Bucket, Key } = req.body;
